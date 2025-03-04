@@ -4332,6 +4332,42 @@ textarea.form-control-lg {
   }
 }
 
+/* Estilos para la sección "Quiénes somos" */
+#about .about-image {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#about .about-image img {
+  max-width: 300px; /* Aumentado de 280px */
+  width: 300px; /* Añadido para mantener consistencia */
+  height: 300px; /* Añadido para forzar forma circular perfecta */
+  object-fit: cover; /* Para asegurar que la imagen cubra todo el espacio */
+  border-radius: 50%; /* Asegura forma perfectamente circular */
+  border: 7px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#about .about-text {
+  padding-left: 20px;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #about .row {
+      flex-direction: column;
+  }
+  
+  #about .about-image {
+      margin-bottom: 2rem;
+  }
+  
+  #about .about-text {
+      padding-left: 0;
+      text-align: center;
+  }
+}
+
 .accordion {
   --bs-accordion-color: #212529;
   --bs-accordion-bg: #fff;
@@ -10927,7 +10963,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #1F2041;
+    background-color: #300d42;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
