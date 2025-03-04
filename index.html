@@ -13,6 +13,7 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" type="text/css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -28,8 +29,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Quiénes somos</a></li>   
                         <li class="nav-item"><a class="nav-link" href="#contact">Contáctanos</a></li>
                     </ul>
@@ -39,51 +40,16 @@
         <!-- Inicio-->
         <header class="masthead" id = "inicio">
             <div class="container">
-                <div class="masthead-subheading">¡Bienvenid@ a Gravity Zero Producciones!</div>
-                <div class="masthead-heading text-uppercase">ESLOGAN XD</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Concer más</a>
+                <div class="masthead-heading text-uppercase" style="font-weight: 300;"><em>Deja tu evento en las mejores manos</em></div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Concer más</a>
             </div>
         </header>
-        <!-- Servicio -->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Servicios</h2>
-                    <h3 class="section-subheading text-muted">Revisa las opciones que tenemos para ti</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Eventos -->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Eventos</h2>
+                    <h3 class="section-subheading text-muted">Echa un vistazo a nuestro trabajo</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -110,7 +76,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/2.webp" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Graduaciones</div>
+                                <div class="portfolio-caption-heading">Cumpleaños</div>
                             </div>
                         </div>
                     </div>
@@ -124,7 +90,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/3.webp" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Eventos de Empresas</div>
+                                <div class="portfolio-caption-heading">Graduaciones</div>
                             </div>
                         </div>
                     </div>
@@ -138,8 +104,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                                <div class="portfolio-caption-heading">Empresas</div>
                             </div>
                         </div>
                     </div>
@@ -154,7 +119,6 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
                             </div>
                         </div>
                     </div>
@@ -169,11 +133,48 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Servicio -->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Servicios</h2>
+                    <h3 class="section-subheading text-muted">Revisa las opciones que tenemos para ti</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="far fa-calendar fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Producción</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-camera fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Fotografía</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-martini-glass-citrus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Barra móvil</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <img src="assets/img/logos/plataforma_360.png" alt="..." style="width: 40%; height: 65%; position: relative; z-index: 1;">
+                        </span>
+                        <h4 class="my-3">Plataforma 360°</h4>
+                    </div> 
             </div>
         </section>
         <!-- Quiénes somos-->
@@ -224,50 +225,6 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Equipo Gravity Zero</h2>
-                    <h3 class="section-subheading text-muted">Conoce a nuestro maravilloso equipo.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
             </div>
         </section>
         <!-- Clients-->
@@ -360,7 +317,7 @@
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/56963425094" target="_blank" aria-label="Chatea por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/56951939263" target="_blank" aria-label="Chatea por WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -370,7 +327,9 @@
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" style="filter: brightness(0) invert(1);" />
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -405,7 +364,9 @@
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" style="filter: brightness(0) invert(1);" />
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -440,7 +401,9 @@
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" style="filter: brightness(0) invert(1);" />
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -475,7 +438,9 @@
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" style="filter: brightness(0) invert(1);" />
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -510,7 +475,9 @@
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" style="filter: brightness(0) invert(1);" />
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -545,7 +512,9 @@
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" style="filter: brightness(0) invert(1);" />
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -578,7 +547,7 @@
         </div>
 
         <!-- WhatsApp Button -->
-        <a href="https://wa.me/56963425094" class="whatsapp-btn" target="_blank" aria-label="Chatea por WhatsApp">
+        <a href="https://wa.me/56951939263" class="whatsapp-btn" target="_blank" aria-label="Chatea por WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
 
