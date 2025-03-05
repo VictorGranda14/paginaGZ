@@ -5848,8 +5848,41 @@ textarea.form-control-lg {
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
+  transition: transform .4s ease-in-out;
 }
+
+.carousel-item .ratio {
+  max-width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  object-fit: contain;
+  width: auto;
+  margin: 0 auto;
+}
+
+.carousel-item video {
+  max-height: 500px;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-item img, .carousel-item video {
+      max-height: 350px;
+  }
+  
+  .carousel-indicators button {
+      width: 50px !important;
+      height: 40px !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -5905,13 +5938,13 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 10%;
   padding: 0;
   color: #fff;
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5972,11 +6005,30 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
+  margin: 0;
   margin-right: 15%;
+  margin-top: 15px;
   margin-bottom: 1rem;
   margin-left: 15%;
   list-style: none;
+  gap: 10px
 }
+
+.carousel-indicators button {
+  width: 70px !important;
+  height: 60px !important;
+  opacity: 0.7;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+  border-color: #ffc800 !important;
+}
+
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
