@@ -10,7 +10,7 @@
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
-    var navbarShrink = function () {
+    var navbarShrink = () => {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
             return;
@@ -51,4 +51,45 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    emailjs.init("4VI4O6I6VBrc0tdko");
+
+    const form = document.getElementById('contactForm');
+    const submitButton = document.getElementById('submitButton');
+    const successMessage = document.getElementById('submitSuccessMessage');
+    const errorMessage = document.getElementById('submitErrorMessage');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        //Change button state
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...',
+        submitButton.disabled = true;
+
+        // Send email using EmailJS
+        emailjs.sendForm('service_ddde983', 'template_mcrh91q', form)
+            .then(() => {
+                // Show success message
+                successMessage.classList.remove('d-none');
+                errorMessage.classList.add('d-none');
+                form.reset();
+
+                //Restore button state
+                setTimeout(() => {
+                    submitButton.innerHTML = 'Enviar';
+                    submitButton.disabled = false;
+                }, 2000);
+            }, (error) => {
+                // Show error message
+                errorMessage.classList.remove('d-none');
+                successMessage.classList.add('d-none');
+                console.error('FAILED...', error);
+
+                //Restore button state
+                submitButton.innerHTML = 'Enviar';
+                submitButton.disabled = false;
+            });
+    });
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -225,60 +225,41 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contáctanos</h2>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Nombre *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Su nombre es obligatorio.</div>
+                                <input class="form-control" id="name" name="userName" type="text" placeholder="Nombre *" required />
+                                <div class="invalid-feedback">Su nombre es obligatorio.</div>
                             </div>
                             <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Su Email es obligatorio.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Formato del Email no es correcto.</div>
+                                <input class="form-control" id="email" name="userEmail" type="email" placeholder="Email *" required />
+                                <div class="invalid-feedback">Ingrese un email válido.</div>
                             </div>
                             <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Su número de teléfono es obligatorio.</div>
+                                <input class="form-control" id="phone" name="userPhone" type="tel" placeholder="Teléfono *" required />
+                                <div class="invalid-feedback">Su número de teléfono es obligatorio.</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <textarea class="form-control" id="message" name="message" placeholder="Mensaje *" required></textarea>
+                                <div class="invalid-feedback">Por favor, escriba un mensaje.</div>
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Enviar</button>
+                    </div>
+                    <div id="submitSuccessMessage" class="d-none">
                         <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            <div class="fw-bolder">¡Mensaje enviado con éxito!</div>
+                            Nos contactaremos contigo a la brevedad.
                         </div>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar</button></div>
+                    <div id="submitErrorMessage" class="d-none">
+                        <div class="text-center text-danger mb-3">Error al enviar mensaje. Por favor, intenta nuevamente.</div>
+                    </div>
                 </form>
             </div>
         </section>
@@ -288,9 +269,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; GravityZero Producciones 2025</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/gravityzeroproducciones/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/profile.php?id=100076271928237&locale=es_LA" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://wa.me/56951939263" target="_blank" aria-label="Chatea por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -564,11 +547,8 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
