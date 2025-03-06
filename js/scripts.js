@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    emailjs.init("4VI4O6I6VBrc0tdko");
+    emailjs.init(config.emailjs.publicKey);
 
     const form = document.getElementById('contactForm');
     const submitButton = document.getElementById('submitButton');
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitButton.disabled = true;
 
         // Send email using EmailJS
-        emailjs.sendForm('service_ddde983', 'template_mcrh91q', form)
+        emailjs.sendForm(config.emailjs.serviceId, config.emailjs.templateId, form)
             .then(() => {
                 // Show success message
                 successMessage.classList.remove('d-none');
