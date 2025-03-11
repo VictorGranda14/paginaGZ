@@ -21,7 +21,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo2.png" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.png" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -50,7 +50,7 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Concer más</a>
             </div>
         </header>
-        <div class="bg-portfolio">
+        <div class="bg-portfolio-services">
             <!-- Eventos -->
             <section class="page-section" id="portfolio">
                 <div class="container">
@@ -66,7 +66,7 @@
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/img/Bodas/CYC (53).jpg" alt="..." />
+                                    <img class="img-fluid" src="assets/img/portfolio/img/Bodas/CYC (53).webp" alt="..." />
                                 </a>
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Bodas</div>
@@ -94,7 +94,7 @@
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/3.webp" alt="..." />
+                                    <img class="img-fluid" src="assets/img/portfolio/img/Graduaciones/DSC03097.webp" alt="..." />
                                 </a>
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Graduaciones</div>
@@ -219,7 +219,7 @@
             </div>
         </div> -->
         <!-- Contact-->
-        <section class="page-section bg-service" id="contact">
+        <section class="page-section bg-contact" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contáctanos</h2>
@@ -363,23 +363,59 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Graduaciones</h2>
+                                    <h2 class="text-uppercase">Cumpleaños</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.webp" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
+                                    
+                                    <!-- Galería de imágenes y videos -->
+                                    <div id="galleryCarousel1" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+                                        <div class="carousel-inner">
+                                            <!-- Elemento 1: Imagen -->
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/img/1.webp" alt="Imagen de boda 1" />
+                                            </div>
+                                            <!-- Elemento 2: Imagen -->
+                                            <div class="carousel-item">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/img/2.webp" alt="Imagen de boda 2" />
+                                            </div>
+                                            <!-- Elemento 3: Video -->
+                                            <div class="carousel-item">
+                                                <div class="ratio ratio-16x9">
+                                                    <video class="d-block mx-auto" controls>
+                                                        <source src="assets/img/portfolio/videos/Baile de las funciones.mp4" type="video/mp4">
+                                                        Tu navegador no soporta videos HTML5.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Controles de navegación -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Siguiente</span>
+                                        </button>
+                                        
+                                        <!-- Indicadores (miniaturas opcionales) -->
+                                        <div class="carousel-indicators position-static mt-3">
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                                <img class="d-block w-100" src="assets/img/portfolio/img/1.webp" alt="Miniatura 1" style="height: 60px; object-fit: cover;">
+                                            </button>
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="1" aria-label="Slide 2">
+                                                <img class="d-block w-100" src="assets/img/portfolio/img/2.webp" alt="Miniatura 2" style="height: 60px; object-fit: cover;">
+                                            </button>
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="2" aria-label="Slide 3">
+                                                <div class="d-block w-100 bg-dark text-white d-flex justify-content-center align-items-center" style="height: 60px;">
+                                                    <i class="fas fa-video"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -400,23 +436,59 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Eventos de Empresas</h2>
+                                    <h2 class="text-uppercase">Graduaciones</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.webp" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
+                                    
+                                    <!-- Galería de imágenes y videos -->
+                                    <div id="galleryCarousel1" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+                                        <div class="carousel-inner">
+                                            <!-- Elemento 1: Imagen -->
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/img/1.webp" alt="Imagen de boda 1" />
+                                            </div>
+                                            <!-- Elemento 2: Imagen -->
+                                            <div class="carousel-item">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/img/2.webp" alt="Imagen de boda 2" />
+                                            </div>
+                                            <!-- Elemento 3: Video -->
+                                            <div class="carousel-item">
+                                                <div class="ratio ratio-16x9">
+                                                    <video class="d-block mx-auto" controls>
+                                                        <source src="assets/img/portfolio/videos/Baile de las funciones.mp4" type="video/mp4">
+                                                        Tu navegador no soporta videos HTML5.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Controles de navegación -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Siguiente</span>
+                                        </button>
+                                        
+                                        <!-- Indicadores (miniaturas opcionales) -->
+                                        <div class="carousel-indicators position-static mt-3">
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                                <img class="d-block w-100" src="assets/img/portfolio/img/1.webp" alt="Miniatura 1" style="height: 60px; object-fit: cover;">
+                                            </button>
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="1" aria-label="Slide 2">
+                                                <img class="d-block w-100" src="assets/img/portfolio/img/2.webp" alt="Miniatura 2" style="height: 60px; object-fit: cover;">
+                                            </button>
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="2" aria-label="Slide 3">
+                                                <div class="d-block w-100 bg-dark text-white d-flex justify-content-center align-items-center" style="height: 60px;">
+                                                    <i class="fas fa-video"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -437,97 +509,59 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <h2 class="text-uppercase">Empresas</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
+                                    
+                                    <!-- Galería de imágenes y videos -->
+                                    <div id="galleryCarousel1" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+                                        <div class="carousel-inner">
+                                            <!-- Elemento 1: Imagen -->
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/img/1.webp" alt="Imagen de boda 1" />
+                                            </div>
+                                            <!-- Elemento 2: Imagen -->
+                                            <div class="carousel-item">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/img/2.webp" alt="Imagen de boda 2" />
+                                            </div>
+                                            <!-- Elemento 3: Video -->
+                                            <div class="carousel-item">
+                                                <div class="ratio ratio-16x9">
+                                                    <video class="d-block mx-auto" controls>
+                                                        <source src="assets/img/portfolio/videos/Baile de las funciones.mp4" type="video/mp4">
+                                                        Tu navegador no soporta videos HTML5.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Controles de navegación -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Siguiente</span>
+                                        </button>
+                                        
+                                        <!-- Indicadores (miniaturas opcionales) -->
+                                        <div class="carousel-indicators position-static mt-3">
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                                <img class="d-block w-100" src="assets/img/portfolio/img/1.webp" alt="Miniatura 1" style="height: 60px; object-fit: cover;">
+                                            </button>
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="1" aria-label="Slide 2">
+                                                <img class="d-block w-100" src="assets/img/portfolio/img/2.webp" alt="Miniatura 2" style="height: 60px; object-fit: cover;">
+                                            </button>
+                                            <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="2" aria-label="Slide 3">
+                                                <div class="d-block w-100 bg-dark text-white d-flex justify-content-center align-items-center" style="height: 60px;">
+                                                    <i class="fas fa-video"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal">
-                        <img src="assets/img/close-icon.svg" alt="Close modal" style="filter: brightness(0) invert(1);" />
-                    </div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal">
-                        <img src="assets/img/close-icon.svg" alt="Close modal" style="filter: brightness(0) invert(1);" />
-                    </div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>

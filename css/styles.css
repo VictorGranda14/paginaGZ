@@ -7817,13 +7817,20 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-portfolio {
+.bg-portfolio-services {
   --bs-bg-opacity: 1;
   background-image: url("../assets/img/backgrounds/fondo_portfolio.png") !important;
   background-attachment: fixed !important;
+  padding-bottom: 12rem;
 }
 
-.bg-service {
+@media (max-width: 768px) {
+  .bg-portfolio-services {
+    padding-bottom: 2rem;
+  }
+}
+
+.bg-contact {
   --bs-bg-opacity: 1;
   background-image: url("../assets/img/backgrounds/fondo_services.png") !important;
   background-attachment: fixed !important;
@@ -10034,7 +10041,7 @@ p {
 
 @media (max-width: 576px) {
   .page-section {
-    padding: 8rem 0;
+    padding: 2rem 0;
   }
   .page-section h2.section-heading, .page-section .section-heading.h2 {
     font-size: 2.5rem;
@@ -10192,7 +10199,7 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 20rem;
+    padding-bottom: 30rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -10205,6 +10212,7 @@ header.masthead .masthead-heading {
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
+    margin-top: 6rem;
   }
 }
 
