@@ -10133,11 +10133,31 @@ header.masthead {
   padding-bottom: 12rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/Fondo-gravityzer.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for video container */
+header.masthead .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places de video behind content */
+}
+
+/* Styles for video */
+header.masthead #background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover; /* Ensures video cover the whole space */
 }
 
 header.masthead .masthead-subheading {
@@ -10153,6 +10173,7 @@ header.masthead .masthead-heading {
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Anton", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  position: relative;
 }
 
 @media (min-width: 768px) {
