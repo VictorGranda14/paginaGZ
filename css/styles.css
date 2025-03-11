@@ -7817,9 +7817,22 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-light {
+.bg-portfolio {
   --bs-bg-opacity: 1;
-  background-color: #1F2041 !important;
+  background-image: url("../assets/img/backgrounds/fondo_portfolio.png") !important;
+  background-attachment: fixed !important;
+}
+
+.bg-service {
+  --bs-bg-opacity: 1;
+  background-image: url("../assets/img/backgrounds/fondo_services.png") !important;
+  background-attachment: fixed !important;
+}
+
+.bg-about {
+  --bs-bg-opacity: 1;
+  background-image: url("../assets/img/backgrounds/fondo_about.png") !important;
+  background-attachment: fixed !important;
 }
 
 .bg-dark {
@@ -10421,12 +10434,6 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
-section#contact {
-  background-color: #1F2041;
-  background-image: url("../assets/img/");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 section#contact .section-heading {
   color: #fff;
 }
