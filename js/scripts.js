@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     const carouselConfigs = {
-        // Primer carrusel
+        // First carousel
         'galleryCarousel1': {
             images: [
                 "assets/img/portfolio/img/Bodas/1.webp",
@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 "assets/img/portfolio/img/Bodas/22.webp"
             ]
         },
-        // Segundo carrusel
+        // Second carousel
         'galleryCarousel2': {
             images: [
                 "assets/img/portfolio/img/Cumpleaños/1.webp",
@@ -131,7 +131,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 "assets/img/portfolio/img/Cumpleaños/8.webp",
             ]
         },
-        //Tercer carrusel
+        //Third carousel
         'galleryCarousel3': {
             images: [
                 "assets/img/portfolio/img/Empresas/1.webp",
@@ -148,20 +148,20 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     };
     
-    // Clase para gestionar un carrusel de imágenes
+    // Class for managing a Bootstrap carousel with thumbnail indicators
     class CarouselManager {
         constructor(carouselId, images) {
             this.carouselId = carouselId;
             this.allImages = images;
-            this.visibleThumbnails = 5; // Número de miniaturas visibles a la vez
+            this.visibleThumbnails = 5; // Number of visible thumbnails at a time
             this.currentGroupIndex = 0;
             this.totalGroups = Math.ceil(this.allImages.length / this.visibleThumbnails);
             
-            // Elementos DOM
+            // DOM elements
             this.carousel = document.getElementById(carouselId);
             this.container = document.querySelector(`[data-thumbnails-for="${carouselId}"]`);
             
-            // Inicializar
+            // Initialize
             this.init();
         }
         
@@ -171,10 +171,10 @@ window.addEventListener('DOMContentLoaded', event => {
                 return;
             }
             
-            // Sincronizar indicadores con el carrusel actual
+            // Sync carousel with thumbnail indicators
             this.carousel.addEventListener('slid.bs.carousel', this.handleCarouselSlide.bind(this));
             
-            // Inicializar las miniaturas
+            // Initialize thumbnail indicators
             this.updateThumbnails();
         }
         
@@ -182,13 +182,13 @@ window.addEventListener('DOMContentLoaded', event => {
             const slideIndex = e.to;
             const groupIndex = Math.floor(slideIndex / this.visibleThumbnails);
             
-            // Si el índice de diapositiva está en un grupo diferente, actualiza las miniaturas
+            // If the slide is in a different group, update the thumbnails
             if (groupIndex !== this.currentGroupIndex) {
                 this.currentGroupIndex = groupIndex;
                 this.updateThumbnails();
             }
             
-            // Actualizar la clase active en los indicadores
+            // Update the active thumbnail indicator
             const buttons = this.container.querySelectorAll('button');
             buttons.forEach(button => button.classList.remove('active'));
             
@@ -200,14 +200,14 @@ window.addEventListener('DOMContentLoaded', event => {
         }
         
         updateThumbnails() {
-            // Limpiar el contenedor
+            // Clear existing thumbnails
             this.container.innerHTML = '';
             
-            // Índice inicial y final del grupo actual
+            // Initialize the range of images to display
             const startIdx = this.currentGroupIndex * this.visibleThumbnails;
             const endIdx = Math.min(startIdx + this.visibleThumbnails, this.allImages.length);
             
-            // Crear nuevos botones indicadores
+            // Create new thumbnail indicators
             for (let i = startIdx; i < endIdx; i++) {
                 const button = document.createElement('button');
                 button.type = 'button';
@@ -215,14 +215,14 @@ window.addEventListener('DOMContentLoaded', event => {
                 button.setAttribute('data-bs-slide-to', i);
                 button.setAttribute('aria-label', `Slide ${i + 1}`);
                 
-                // Agregar clase active si es la diapositiva actual
+                // Add active class to the current slide
                 const activeSlideIndex = this.getActiveSlideIndex();
                 if (i === activeSlideIndex) {
                     button.classList.add('active');
                     button.setAttribute('aria-current', 'true');
                 }
                 
-                // Agregar miniatura
+                // Add thumbnail image
                 const img = document.createElement('img');
                 img.className = 'd-block w-100';
                 img.src = this.allImages[i];
@@ -242,7 +242,7 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     }
     
-    // Inicializar todos los carruseles
+    // Initialize carousels
     for (const [carouselId, config] of Object.entries(carouselConfigs)) {
         if (document.getElementById(carouselId)) {
             new CarouselManager(carouselId, config.images);
