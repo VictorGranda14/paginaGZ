@@ -603,6 +603,9 @@ progress {
   max-width: 100%;
   height: 23vw;
   object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 576px) {
@@ -3700,9 +3703,8 @@ textarea.form-control-lg {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 100% 100%;
+  background-color: rgb(44, 1, 78);
+  border-radius: 80%;
 }
 
 /* rtl:options: {
@@ -7856,23 +7858,25 @@ header.masthead .masthead-heading {
 
 /* Card styles */
 #portfolio .portfolio-item.card {
+  border: 2px solid #9681e4; /* Slightly brighter purple border */
+  box-shadow: 0 0 10px 0 #9681e4, 0 0 20px 0 rgba(150, 129, 228, 0.7);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease;
   margin-bottom: 1rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.027);
 }
 
 #portfolio .portfolio-item.card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 #9681e4, 0 0 30px 0 rgba(150, 129, 228, 0.8);
 }
 
 #portfolio .portfolio-item .portfolio-link {
-  position: relative;
   display: block;
-  margin: 0 auto;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
