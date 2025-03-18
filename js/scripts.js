@@ -134,9 +134,16 @@ window.addEventListener('DOMContentLoaded', event => {
         //Tercer carrusel
         'galleryCarousel3': {
             images: [
-                "assets/img/portfolio/img/Graduaciones/1.webp",
-                "assets/img/portfolio/img/Graduaciones/3.webp",
-                "assets/img/portfolio/img/Graduaciones/5.webp",
+                "assets/img/portfolio/img/Empresas/1.webp",
+                "assets/img/portfolio/img/Empresas/2.webp",
+                "assets/img/portfolio/img/Empresas/3.webp",
+                "assets/img/portfolio/img/Empresas/4.webp",
+                "assets/img/portfolio/img/Empresas/5.webp",
+                "assets/img/portfolio/img/Empresas/6.webp",
+                "assets/img/portfolio/img/Empresas/7.webp",
+                "assets/img/portfolio/img/Empresas/8.webp",
+                "assets/img/portfolio/img/Empresas/9.webp",
+                "assets/img/portfolio/img/Empresas/10.webp"
             ]
         }
     };
