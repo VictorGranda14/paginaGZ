@@ -7720,7 +7720,7 @@ p {
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
-  font-size: 0.75rem;
+  font-size: 1.15rem;
   font-family: "Anton", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 300;
@@ -7749,7 +7749,7 @@ p {
 @media (max-width: 768px) {
   /* Ajustar el navbar */
   #mainNav .navbar-brand img {
-    height: 2rem;
+    height: 3rem;
   }
 }
 
@@ -7779,7 +7779,7 @@ p {
   }
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 3rem;
+    height: 3.75rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
