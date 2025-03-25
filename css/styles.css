@@ -5477,7 +5477,7 @@ textarea.form-control-lg {
 
 .bg-portfolio-services {
   --bs-bg-opacity: 1;
-  background-image: url("../assets/img/backgrounds/fondo_portfolio.png") !important;
+  background-image: url("../assets/img/backgrounds/fondo_portfolio.jpg") !important;
   background-attachment: fixed !important;
   padding-bottom: 12rem;
 }
@@ -5496,7 +5496,7 @@ textarea.form-control-lg {
 
 .bg-about {
   --bs-bg-opacity: 1;
-  background-image: url("../assets/img/backgrounds/fondo_about.png") !important;
+  background-image: url("../assets/img/backgrounds/fondo_about.webp") !important;
   background-attachment: fixed !important;
 }
 
@@ -7858,7 +7858,7 @@ header.masthead .masthead-heading {
 
 /* Card styles */
 #portfolio .portfolio-item.card {
-  border: 2px solid #9681e4; /* Slightly brighter purple border */
+  border-style: 2px solid #9681e4; /* Slightly brighter purple border */
   box-shadow: 0 0 10px 0 #9681e4, 0 0 20px 0 rgba(150, 129, 228, 0.7);
   border-radius: 8px;
   overflow: hidden;
@@ -7933,6 +7933,11 @@ header.masthead .masthead-heading {
   max-width: 90%;
 }
 .portfolio-modal .modal-content {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(48, 13, 66, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
   padding-top: 6rem;
   padding-bottom: 6rem;
   text-align: center;
